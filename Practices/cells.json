@@ -1,0 +1,12 @@
+{
+  "target_sheet": "Stock Pick Metrics",
+  "formulas": [
+    { "cell": "B2", "formula": "=TODAY()" },
+    { "cell": "H5", "formula": "='Income Statement'!C12" },
+    { "cell": "K10", "formula": "=IFERROR(SUM(D10:G10),0)" },
+    {
+      "cell": "M20",
+      "formula": "=XLOOKUP(A20, 'Balance Sheet'!A:A, 'Balance Sheet'!F:F)"
+    }
+  ]
+}
